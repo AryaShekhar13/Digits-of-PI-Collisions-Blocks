@@ -25,9 +25,11 @@ while running:
     pg.draw.rect(screen, color1, (screen_x1-width1/2, 500, width1, width1))
     pg.draw.rect(screen, color2, (screen_x2-width2/2, 480, width2, width2))
     pg.draw.line(screen, color3, (-10,530), (1010,530), 3)
-    text = font.render(f"Digits of PI: {collisions}", True, (255, 255, 255))
+    text1 = font.render(f"Digits of PI: {collisions}", True, (255, 0, 0))
+    text2 = font.render(f"Digits of PI {collisions}", True, (0, 255, 0))
+    screen.blit(text1, (350, 100))
     if vel2 >= vel1 and vel1 >= 0:
-        screen.blit(text, (350, 100))
+        screen.blit(text2, (350, 100))
 
 
     pg.display.flip()
