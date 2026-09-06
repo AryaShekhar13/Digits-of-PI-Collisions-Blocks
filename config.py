@@ -5,3 +5,4 @@ x1 = 100
 x2 = 200
 width1 = 30
 width2 = 50
+collisions = 0
